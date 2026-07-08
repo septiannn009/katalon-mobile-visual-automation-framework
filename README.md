@@ -107,7 +107,7 @@ The automation captures UI elements directly from the Android application and co
 
 Actual image matches with baseline image.
 
-![Visual Match Evidence](https://drive.google.com/file/d/18J9kJpQHYDHfIpr1qpYoiX2f-wqoHcJz/view?usp=sharing)
+https://drive.google.com/file/d/18J9kJpQHYDHfIpr1qpYoiX2f-wqoHcJz/view?usp=sharing
 
 Result:
 
@@ -125,7 +125,7 @@ Example when UI differences are detected.
 
 OpenCV detects pixel changes between baseline and actual screenshots.
 
-![Visual Difference Evidence](https://drive.google.com/file/d/17e1NIDc8wLMtvirax-2g1xaAJLewwLNs/view?usp=sharing)
+https://drive.google.com/file/d/17e1NIDc8wLMtvirax-2g1xaAJLewwLNs/view?usp=sharing
 
 Result:
 
