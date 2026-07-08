@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Rent Home Default State &amp; Greeting</description>
+   <name>TC-01</name>
+   <tag>#PREBOOKING</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9b0b9d55-c294-444c-b1e7-cdfb8eadf368</testCaseGuid>
+</TestCaseEntity>

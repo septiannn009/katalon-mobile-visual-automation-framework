@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>GPS user aktif di luar area SK GB (misal: Papua) atau GPS mati.</description>
+   <name>TC-03</name>
+   <tag>#Prebooking</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>edf2e9f8-a82f-454d-b659-c1c501b7dd0a</testCaseGuid>
+</TestCaseEntity>
