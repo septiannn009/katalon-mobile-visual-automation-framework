@@ -97,6 +97,46 @@ Test Result : PASSED
 
 ---
 
+## Visual Regression Evidence
+
+Example execution result from mobile visual regression testing.
+
+The automation captures UI elements directly from the Android application and compares them with baseline images using OpenCV pixel comparison.
+
+### Visual Match Result (PASSED)
+
+Actual image matches with baseline image.
+
+![Visual Match Evidence](https://drive.google.com/file/d/18J9kJpQHYDHfIpr1qpYoiX2f-wqoHcJz/view?usp=sharing)
+
+Result:
+
+```text
+IMAGE DIFFERENCE : 0.0%
+IMAGE MATCH : 100.0%
+Test Result : PASSED
+```
+
+---
+
+### Visual Difference Detection
+
+Example when UI differences are detected.
+
+OpenCV detects pixel changes between baseline and actual screenshots.
+
+![Visual Difference Evidence](https://drive.google.com/file/d/17e1NIDc8wLMtvirax-2g1xaAJLewwLNs/view?usp=sharing)
+
+Result:
+
+```text
+IMAGE DIFFERENCE : 0.918507347%
+IMAGE MATCH : 99.081492653%
+Diff image generated for analysis
+```
+
+---
+
 ## Visual Testing Flow
 
 
