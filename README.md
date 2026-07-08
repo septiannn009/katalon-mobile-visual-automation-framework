@@ -1,182 +1,142 @@
 # Katalon Mobile Visual Automation Framework
 
-Mobile automation testing framework using **Katalon Studio, Appium, Groovy, and OpenCV**.
+Mobile automation testing framework using Katalon Studio, Appium, Groovy, and OpenCV.
 
-This project demonstrates Android mobile automation testing with reusable custom keywords and visual regression testing using image comparison.
-
----
+This project demonstrates mobile QA automation implementation including functional testing, UI validation, custom reusable keywords, and visual regression testing using image comparison.
 
 ## Tech Stack
 
 - Katalon Studio
-- Groovy
 - Appium
-- Android UI Automation
+- Groovy
+- Android UIAutomator
 - OpenCV Image Processing
+- Git / GitHub
 
 ---
 
-## Key Features
+## Features
 
-### Mobile Automation
+### Mobile Functional Automation
+- Automated mobile UI interaction
+- Element validation
+- Text verification
+- Location search validation
+- Tooltip validation
+- Negative scenario testing
 
-- Android application automation testing
-- Element interaction:
-  - Tap
-  - Input text
-  - Verify element
-  - Verify text
-- Object Repository based locator management
+### Visual Regression Testing
+- Baseline image comparison
+- Element screenshot capture
+- Pixel difference detection
+- Match percentage calculation
+- Auto generate actual image
+- Generate diff image when mismatch detected
 
 ---
 
-### Custom Keyword Framework
+## Test Scenarios
 
-Reusable helper functions:
+| Test Case | Scenario | Validation |
+|---------|----------|------------|
+| TC-01 | Verify Rent Home Default State And Greeting | UI element validation, text assertion |
+| TC-03 | Verify Auto-fill Location Logic (GPS Outside Coverage) | Location behavior validation |
+| TC-04 | Verify Operational Area Tooltip Functionality | Tooltip UI validation |
+| TC-07 | Verify Search Location Empty State (No Result) | Text validation + OpenCV visual comparison |
 
-```text
-Keywords/helper
+---
 
-├── ImageHelper.groovy
-├── VerifyHelper.groovy
-├── ScreenshotHelper.groovy
-└── TextHelper.groovy
+## Framework Structure
+
 ```
-
----
-
-## Visual Regression Testing
-
-Implemented visual validation using OpenCV.
-
-Flow:
-
-```text
-Baseline Image
-       |
-       v
-Capture Mobile Element Screenshot
-       |
-       v
-Actual Image
-       |
-       v
-OpenCV Pixel Comparison
-       |
-       |
-   PASS / FAIL
-```
-
----
-
-## Image Validation Features
-
-- Capture specific mobile element screenshot
-- Compare baseline image vs actual image
-- Calculate image similarity percentage
-- Generate difference image when validation fails
-- Threshold based validation
-
-
-Example Result:
-
-```text
-IMAGE DIFFERENCE : 0.0%
-
-IMAGE MATCH : 100.0%
-```
-
----
-
-## Project Structure
-
-```text
 Katalon-Mobile-Visual-Framework
 
 ├── Test Cases
-│
-│   └── RENT REVAMP ENV REGRESS
+│   └── Mobile Visual Regression Testing
 │
 ├── Object Repository
-│
 │   └── Mobile Objects
 │
 ├── Keywords
-│
 │   └── helper
-│
 │       ├── ImageHelper.groovy
-│       ├── VerifyHelper.groovy
 │       ├── ScreenshotHelper.groovy
-│       └── TextHelper.groovy
+│       ├── TextHelper.groovy
+│       └── VerifyHelper.groovy
 │
 ├── BaselineImages
 │
-│   └── Expected Images
-│
 ├── ActualImages
 │
-│   └── Generated During Execution
-│
 └── DiffImages
-    |
-    └── Failed Comparison Evidence
 ```
 
 ---
 
-## Sample Test Scenario
+## Custom Keyword Implementation
 
-### TC-07 Empty Location Validation
+### ImageHelper
 
-Scenario:
+Responsible for visual validation using OpenCV.
 
-```text
-1. Open mobile application
+Capabilities:
 
-2. Navigate to location search page
+- Capture mobile element screenshot
+- Compare baseline and actual image
+- Calculate image similarity percentage
+- Generate difference image
 
-3. Input invalid location
 
-4. Verify empty state message
+Example result:
 
-5. Capture empty state icon
-
-6. Compare UI image using OpenCV
-
-7. Generate automation result
+```
+IMAGE DIFFERENCE : 0.0%
+IMAGE MATCH : 100.0%
+Test Result : PASSED
 ```
 
-Validation:
+---
 
-```text
-Expected Image
-      VS
-Actual Mobile Screenshot
+## Visual Testing Flow
+
+
+1. Capture element from mobile application
+
+2. Compare with baseline image
+
+3. Calculate pixel difference
+
+4. Generate result
+
+```
+Baseline Image
+      |
+      v
+Actual Screenshot
+      |
+      v
+OpenCV Comparison
+      |
+      v
+PASS / FAIL
 ```
 
-Result:
+---
 
-```text
-PASS
+## Test Result Example
+
+PASSED:
+
+```
+TC-01 Functional Validation Passed
+
+TC-03 Location Logic Passed
+
+TC-04 Tooltip Validation Passed
+
+TC-07 Visual Regression Passed
 
 IMAGE MATCH : 100%
-```
-
----
-
-## Custom Keyword Example
-
-```groovy
-CustomKeywords.'helper.ImageHelper.verifyElementImage'(
-
-    findTestObject('Object Repository/iconEmptyLocation'),
-
-    'BaselineImages/Icon/Outside_area.png',
-
-    5
-
-)
 ```
 
 ---
@@ -186,13 +146,14 @@ CustomKeywords.'helper.ImageHelper.verifyElementImage'(
 This project was created as a QA Automation portfolio demonstrating:
 
 - Mobile automation framework design
+- Reusable keyword architecture
+- Functional regression testing
 - Visual regression testing implementation
-- Reusable automation architecture
-- Custom keyword development
-- Image processing validation
+- Real QA engineering workflow
 
 ---
 
 ## Author
 
-QA Automation Engineer Portfolio Project
+Septian Pratama  
+QA Engineer

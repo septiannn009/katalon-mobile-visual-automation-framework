@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Operational Area Tooltip Functionality&#xd;
+&#xd;
+&quot;1. Muncul Bottom Sheet berisi list area operasional.&#xd;
+2. List area ditampilkan row by row (kiri ke kanan).&quot;</description>
+   <name>TC-04 Verify Operational Area Tooltip Functionality</name>
+   <tag>#Prebooking</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>07718674-7738-4f1f-bfba-98b2e1cd62eb</testCaseGuid>
+</TestCaseEntity>
