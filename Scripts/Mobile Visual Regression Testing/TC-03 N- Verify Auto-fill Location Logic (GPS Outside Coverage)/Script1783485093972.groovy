@@ -21,17 +21,17 @@ import com.kms.katalon.core.util.KeywordUtil
 Mobile.startExistingApplication(GlobalVariable.ApplicationId)
 
 //tap rent revamp button on home mybb
-Mobile.tap(findTestObject('Rent Revamp Env Regress/Home/btnRent'), 0)
+Mobile.tap(findTestObject('Mobile Visual Regression Testing/Home/btnRent'), 0)
 
 //verify nama yang tampil apakah sudah sesuai atau belum
 Mobile.verifyElementVisible(
-	findTestObject('Rent Revamp Env Regress/Home/lblGreeting'),
+	findTestObject('Mobile Visual Regression Testing/Home/lblGreeting'),
 	10
 )
 
 //log untuk bandingkan expected sama actual nama yang tampil dengan set yang ada di profiles
 String actualGreeting = Mobile.getText(
-	findTestObject('Rent Revamp Env Regress/Home/lblGreeting'),
+	findTestObject('Mobile Visual Regression Testing/Home/lblGreeting'),
 	10
 ).trim()
 
@@ -50,12 +50,12 @@ if (actualGreeting == expectedGreeting) {
 
 //verify placeholder tampil ketika lokasi tidak mencakupi lokasi
 Mobile.verifyElementVisible(
-	findTestObject('Rent Revamp Env Regress/Home/lblPlaceholder'),
+	findTestObject('Mobile Visual Regression Testing/Home/lblPlaceholder'),
 	10
 )
 
 String actualPlaceholder = Mobile.getText(
-	findTestObject('Rent Revamp Env Regress/Home/lblPlaceholder'),
+	findTestObject('Mobile Visual Regression Testing/Home/lblPlaceholder'),
 	10
 ).trim()
 
