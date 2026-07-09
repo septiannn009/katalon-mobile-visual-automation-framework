@@ -22,36 +22,36 @@ import com.kms.katalon.core.annotation.Keyword as Keyword
 Mobile.startExistingApplication(GlobalVariable.ApplicationId)
 
 //tap rent revamp button on home mybb
-Mobile.tap(findTestObject('Rent Revamp Env Regress/Home/btnRent'), 0)
+Mobile.tap(findTestObject('Mobile Visual Regression Testing/Home/btnRent'), 0)
 
 //tap tooltip button on home rent revamp
-Mobile.tap(findTestObject('Object Repository/Rent Revamp Env Regress/Home/btntooltip'), 15)
+Mobile.tap(findTestObject('Object Repository/Mobile Visual Regression Testing/Home/btntooltip'), 15)
 
 //verify text bb,sb,gb showed
 // Verify Bluebird
-CustomKeywords.'helper.helper.TextHelper.verifyText'(findTestObject('Object Repository/Rent Revamp Env Regress/Home/lblbluebird'), 
+CustomKeywords.'helper.helper.TextHelper.verifyText'(findTestObject('Object Repository/Mobile Visual Regression Testing/Home/lblbluebird'), 
     'Bluebird')
 
 // Verify Silver Bird
-CustomKeywords.'helper.helper.TextHelper.verifyText'(findTestObject('Object Repository/Rent Revamp Env Regress/Home/lblSilverbird'), 
+CustomKeywords.'helper.helper.TextHelper.verifyText'(findTestObject('Object Repository/Mobile Visual Regression Testing/Home/lblSilverbird'), 
     'Silverbird')
 
 // Verify Golden Bird
-CustomKeywords.'helper.helper.TextHelper.verifyText'(findTestObject('Object Repository/Rent Revamp Env Regress/Home/lblGoldenbird'), 
+CustomKeywords.'helper.helper.TextHelper.verifyText'(findTestObject('Object Repository/Mobile Visual Regression Testing/Home/lblGoldenbird'), 
     'Goldenbird')
 
 //button oke,mengerti direct to homepage rent revamp
-Mobile.tap(findTestObject('Object Repository/Rent Revamp Env Regress/Home/btnoke2'), 0)
+Mobile.tap(findTestObject('Object Repository/Mobile Visual Regression Testing/Home/btnoke2'), 0)
 
 //verify home tampil setelah button oke,mengerti
-Mobile.verifyElementVisible(findTestObject('Rent Revamp Env Regress/Home/lblGreeting'),10)
+Mobile.verifyElementVisible(findTestObject('Mobile Visual Regression Testing/Home/lblGreeting'),10)
 
 //tap tooltip button on home rent revamp
-Mobile.tap(findTestObject('Object Repository/Rent Revamp Env Regress/Home/btntooltip'), 15)
+Mobile.tap(findTestObject('Object Repository/Mobile Visual Regression Testing/Home/btntooltip'), 15)
 
 //button exit direct to homepage rent revamp
-Mobile.tap(findTestObject('Object Repository/Rent Revamp Env Regress/Home/btnexit2'), 15)
+Mobile.tap(findTestObject('Object Repository/Mobile Visual Regression Testing/Home/btnexit2'), 15)
 
 //verify home tampil setelah button exit
-Mobile.verifyElementVisible(findTestObject('Rent Revamp Env Regress/Home/lblGreeting'), 10)
+Mobile.verifyElementVisible(findTestObject('Mobile Visual Regression Testing/Home/lblGreeting'), 10)
 
