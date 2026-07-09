@@ -23,19 +23,19 @@ Mobile.startExistingApplication(GlobalVariable.ApplicationId)
 
 //tap rent revamp button on home mybb
 Mobile.tap(
-    findTestObject('Rent Revamp Env Regress/Home/btnRent'),
+    findTestObject('Mobile Visual Regression Testing/Home/btnRent'),
     0
 )
 
 //verify nama yang tampil apakah sudah sesuai atau belum
 Mobile.verifyElementVisible(
-    findTestObject('Rent Revamp Env Regress/Home/lblGreeting'),
+    findTestObject('Mobile Visual Regression Testing/Home/lblGreeting'),
     10
 )
 
 //log untuk bandingkan expected sama actual nama yang tampil dengan set yang ada di profiles
 String actualGreeting = Mobile.getText(
-    findTestObject('Rent Revamp Env Regress/Home/lblGreeting'),
+    findTestObject('Mobile Visual Regression Testing/Home/lblGreeting'),
     10
 ).trim()
 
@@ -59,13 +59,13 @@ if (actualGreeting == expectedGreeting) {
 
 // Verify Pickup Location Visible
 Mobile.verifyElementVisible(
-    findTestObject('Rent Revamp Env Regress/Home/lblPickupLocation'),
+    findTestObject('Mobile Visual Regression Testing/Home/lblPickupLocation'),
     10
 )
 
 // Get Pickup Location
 String pickupLocation = Mobile.getText(
-    findTestObject('Rent Revamp Env Regress/Home/lblPickupLocation'),
+    findTestObject('Mobile Visual Regression Testing/Home/lblPickupLocation'),
     10
 ).trim()
 
@@ -84,12 +84,12 @@ if (pickupLocation.isEmpty()) {
 
 // Verify Default Duration Visible
 Mobile.verifyElementVisible(
-	findTestObject('Rent Revamp Env Regress/Home/lblDuration'),
+	findTestObject('Mobile Visual Regression Testing/Home/lblDuration'),
 	10
 )
 
 String actualDuration = Mobile.getText(
-	findTestObject('Rent Revamp Env Regress/Home/lblDuration'),
+	findTestObject('Mobile Visual Regression Testing/Home/lblDuration'),
 	10
 ).trim()
 
