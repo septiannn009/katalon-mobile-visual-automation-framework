@@ -21,39 +21,39 @@ import java.text.SimpleDateFormat
 Mobile.startExistingApplication(GlobalVariable.ApplicationId)
 
 //tap rent revamp button on home mybb
-Mobile.tap(findTestObject('Rent Revamp Env Regress/Home/btnRent'), 0)
+Mobile.tap(findTestObject('Mobile Visual Regression Testing/Home/btnRent'), 0)
 
 //verify home tampil setelah button exit
-Mobile.verifyElementVisible(findTestObject('Rent Revamp Env Regress/Home/lblGreeting'), 10)
+Mobile.verifyElementVisible(findTestObject('Mobile Visual Regression Testing/Home/lblGreeting'), 10)
 
 //tap rent revamp button on home mybb
-Mobile.tap(findTestObject('Object Repository/Rent Revamp Env Regress/Home/btnsearch4txt'), 0)
+Mobile.tap(findTestObject('Object Repository/Mobile Visual Regression Testing/Home/btnsearch4txt'), 0)
 
 //tap delete icon untuk hapus text location autocomplete
-Mobile.tap(findTestObject('Object Repository/Rent Revamp Env Regress/Home/btndeletetxtsearch'), 0)
+Mobile.tap(findTestObject('Object Repository/Mobile Visual Regression Testing/Home/btndeletetxtsearch'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 //input text 
-Mobile.sendKeys(findTestObject('Object Repository/Rent Revamp Env Regress/Home/btnedittext2'), 'gsgffghg', FailureHandling.STOP_ON_FAILURE)
+Mobile.sendKeys(findTestObject('Object Repository/Mobile Visual Regression Testing/Home/btnedittext2'), 'gsgffghg', FailureHandling.STOP_ON_FAILURE)
 
 // verify lokasi tidak ditemukan wording
 
 // Verify icon empty state
 CustomKeywords.'helper.ImageHelper.verifyElementImage'(
-findTestObject('Object Repository/Rent Revamp Env Regress/Home/iconEmptyLocation'),
+findTestObject('Object Repository/Mobile Visual Regression Testing/Home/iconEmptyLocation'),
 'BaselineImages/Icon/Outside_area.png',5
 )
 
 // Verify title
 CustomKeywords.'helper.VerifyHelper.verifyText'(
-    findTestObject('Object Repository/Rent Revamp Env Regress/Home/lblverify2'),
+    findTestObject('Object Repository/Mobile Visual Regression Testing/Home/lblverify2'),
     'Lokasi tidak ditemukan'
 )
 
 // Verify subtitle
 CustomKeywords.'helper.VerifyHelper.verifyText'(
-    findTestObject('Object Repository/Rent Revamp Env Regress/Home/lblverify3'),
+    findTestObject('Object Repository/Mobile Visual Regression Testing/Home/lblverify3'),
     'Lokasi yang dicari tidak tersedia. Silakan cari lokasi lain.'
 )
 
